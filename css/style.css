@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/*
+  Typography
+*/
+h1, 
+h2, 
+.btn, 
+.nav-link {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*
+  Header
+*/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+  padding-left: 20px;
+}
+
+.nav-link:first-child {
+  padding-left: 0;
+}
+
+/*
+  productive section
+*/
+.productive {
+  color: var(--desaturated-blue);
+  background-color: var(--light-grayish-blue);
+}
+
+/*
+  Access section
+*/
+.access {
+  color: white;
+  background-color: var(--desaturated-blue);
+}
+
+
+/* 
+footer 
+*/
+footer {
+  color: white;
+  background-color: var(--very-dark-blue);
+}
