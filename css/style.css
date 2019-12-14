@@ -73,4 +73,41 @@ footer
 footer {
   color: white;
   background-color: var(--very-dark-blue);
+  display: grid;
+  grid-template-columns: 100%;
+
+}
+
+.footer-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: color 1s;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--desaturated-blue);
+}
+
+i {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin: 5px;
+  color: white;
+  transition: color 1s, border-color 1s;
+}
+
+i:hover,
+i:focus {
+  color: var(--desaturated-blue);
+  border-color: var(--desaturated-blue);
+}
+
+.logo-white {
+  display: block;
 }
