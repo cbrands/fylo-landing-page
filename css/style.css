@@ -34,10 +34,14 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-top: 30px;
+  border: 1px solid red;
+  height: 2.5rem;
 }
 
 .logo {
   display: inline-block;
+  border: 1px solid green;
+  height: 100%;
 }
 
 .nav-link {
@@ -48,6 +52,21 @@ header {
 
 .nav-link:first-child {
   padding-left: 0;
+}
+
+@media (min-width: 600px) {
+  header {
+    justify-content: space-between;
+    height: 3rem;
+  }
+
+  .nav {
+    margin-right: 80px;
+  }
+
+  .logo {
+    margin-left: 80px;
+  }
 }
 
 /*
