@@ -75,11 +75,19 @@ header {
 .nav-link {
   text-decoration: none;
   color: var(--desaturated-blue);
-  padding-left: 20px;
+  margin-left: 20px;
+  border-bottom: 1px solid white;
+  transition: color 1s, border-color 1s;
 }
 
 .nav-link:first-child {
-  padding-left: 0;
+  margin-left: 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--moderate-cyan);
+  border-color: var(--moderate-cyan);
 }
 
 @media (min-width: 700px) {
@@ -106,6 +114,7 @@ main {
   grid-template-columns: 100%;
   padding: 50px;
   text-align: center;
+  margin-top: 60px;
 }
 
 .illustration1 {
@@ -130,7 +139,7 @@ main {
 input {
   width: 100%;
   font-size: 1.1rem;
-  padding: 18px 0;
+  padding: 18px 30px;
   border: 1px solid var(--desaturated-blue);
   border-radius: 5px;
   margin-bottom: 24px;
@@ -138,7 +147,6 @@ input {
 
 input::placeholder{
   color: var(--light-gray);
-  margin-left: 0;
 }
 
 @media (min-width: 700px) {
@@ -192,16 +200,15 @@ input::placeholder{
   background-color: var(--light-grayish-blue);
   display: grid;
   grid-template-columns: 100%;
-  padding: 50px;
-  padding-top: 0;
+  padding: 0 50px 70px 50px;
   text-align: left;
   width: 100%;
 }
 
 .productive-heading {
   margin-top: 100px;
-  font-size: 1.6rem;
-
+  font-size: 1.4rem;
+  /* color: black; */
 }
 
 .productive-text {
@@ -211,7 +218,7 @@ input::placeholder{
 }
 
 .curve {
-  margin: 0;
+  margin: 80px 0 0 0;
   height: 80px;
   background-image: url("../images/bg-curve-mobile.svg");
   background-color: #fff;
@@ -257,7 +264,7 @@ input::placeholder{
   width: 50%;
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-column-gap: 10px;
+  grid-column-gap: 20px;
   font-size: 0.6rem;
   line-height: 1.6;
 }
@@ -338,7 +345,7 @@ input::placeholder{
 .access-input {
   font-size: 0.9rem;
   margin-bottom: 10px;
-  padding: 16px 40px;
+  padding: 16px 20px;
 }
 
 .btn-access {
@@ -376,19 +383,43 @@ footer {
   background-color: var(--very-dark-blue);
   display: grid;
   grid-template-columns: 100%;
+  padding: 70px;
+  font-size: 1.5rem;
+}
 
+.logo-white {
+  height: 4.5rem;
+  margin: 30px 0;
+}
+
+.contact-item {
+  margin-top: 1.6rem;
+}
+
+.logo-small {
+  margin-right: 20px;
+}
+
+.about,
+.contact-links {
+  margin-top: 3.5rem;
 }
 
 .footer-link {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: white;
   transition: color 1s;
+  margin-top: 1.6rem;
 }
 
 .footer-link:hover,
 .footer-link:focus {
   color: var(--desaturated-blue);
+}
+
+.social {
+  margin: 4rem auto 0 auto
 }
 
 i {
@@ -400,6 +431,7 @@ i {
   padding-top: 0.5rem;
   margin: 5px;
   color: white;
+  font-size: 1rem;
   transition: color 1s, border-color 1s;
 }
 
@@ -407,6 +439,7 @@ i:hover,
 i:focus {
   color: var(--desaturated-blue);
   border-color: var(--desaturated-blue);
+  cursor: pointer;
 }
 
 .logo-white {
